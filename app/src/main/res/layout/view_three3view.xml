@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlThreeView"
+        android:layout_width="175dp"
+        android:layout_height="175dp">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/goods_btn_close" />
+
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/goods_btn_information" />
+
+        <ImageView
+            android:id="@+id/imgLightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/goods_btn_brightness" />
+
+        <ImageView
+            android:id="@+id/imgViewThreeScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/goods_btn_scale" />
+
+        <ImageView
+            android:id="@+id/imgViewThreeMultidimensional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/goods_btn_3d" />
+
+        <TextView
+            android:id="@+id/tvLineOne"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tvLineTwo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tvLineThree"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tvLineFour"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/white" />
+
+        <FrameLayout
+            android:id="@+id/flMyGlScene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <org.andresoviedo.util.core.render.ModelSurfaceView
+                android:id="@+id/mGLView"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/transparent" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
